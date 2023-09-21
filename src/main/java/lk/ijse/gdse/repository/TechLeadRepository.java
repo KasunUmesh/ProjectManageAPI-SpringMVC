@@ -7,4 +7,7 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface TechLeadRepository extends JpaRepository<TechLead, String> {
+
+    TechLead findTechLeadById(String id);
+    void deleteById(String id);
 }
